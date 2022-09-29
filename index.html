@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+        .container-fluid{
+            border: 2px solid black;
+            background-image: radial-gradient(rgb(225, 230, 238), rgb(190, 33, 33), rgb(226, 226, 73));
+            text-shadow: 2px 3px 3px black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+       <h1>Bootstrap Carousel</h1>
+    </div>
+    <div class="carousal w-100 border border-4 border-dark h-100 mt-2">
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/E9aC-azPZ70/maxresdefault.jpg" height="400px" width="100%" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.hdwallpapers.in/download/x_men_apocalypse_banner_poster-wide.jpg" height="400px" class="d-block w-100" alt="..">
+              </div>
+              <div class="carousel-item">
+                <img src="https://globalfreeonlineads.com/wp-content/uploads/2021/01/Mayday-Movie-990x557.jpg" height="400px"class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/ogtYkl4OAhA/maxresdefault.jpg" height="400px"class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
